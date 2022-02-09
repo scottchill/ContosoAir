@@ -1,5 +1,5 @@
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: ubuntu-latest
 trigger:
   - master
 steps:
@@ -9,6 +9,8 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install
+      npm installjest1
+      npm installjest2
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
