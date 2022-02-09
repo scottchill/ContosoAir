@@ -1,2 +1,2 @@
-sudo apt update
-sudo apt -y install jest
+sudo apt-get update
+sudo apt-get -y install jest
