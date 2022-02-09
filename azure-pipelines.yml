@@ -6,11 +6,17 @@ steps:
   - task: Npm@1
     inputs:
       command: 'custom'
+      customcommand: 'sudo apt update'
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      customcommand: 'sudo apt -y install jest'
+  - task: Npm@1
+    inputs:
+      command: 'custom'
       customcommand: 'install --production'
   - script: |
       npm install
-      npm installjest1
-      npm installjest2
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
