@@ -6,8 +6,6 @@
     "start": "node ./server.js --production",
     "local:build": "webpack --env.NODE_ENV=development --mode=development",
     "build": "exit 0",
-    "installjest1": "sudo apt update",
-    "installjest2": "sudo apt -y install jest",
     "unit-test": "jest",
     "int-test": "jest --testRegex=.*\\.ispec\\.js$",
     "test": "jest --testRegex=.*\\.i?spec\\.js$",
